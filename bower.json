@@ -2,5 +2,14 @@
     "name": "angular-guid",
     "version": "0.1.0",
     "main": "./guid.js",
-    "ignore": []
+    "keywords": [
+        "uuid",
+        "guid",
+        "angularjs"
+    ],
+    "dependencies": {
+        "angular": "~1.0.7"
+    },
+    "ignore": [],
+    "_release": "0.1.0"
 }
