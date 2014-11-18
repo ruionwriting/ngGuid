@@ -7,9 +7,6 @@
         "guid",
         "angularjs"
     ],
-    "dependencies": {
-        "angular": "~1.0.7"
-    },
     "ignore": [],
     "_release": "0.1.0"
 }
