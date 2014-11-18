@@ -1,0 +1,7 @@
+{
+  name: "angular-guid",
+  version: "0.1.0",
+  main: "./uuid.min.js",
+  homepage: "https://github.com/ruionwriting/ngGuid"
+  "_source": "git@github.com:ruionwriting/ngGuid.git",
+}
