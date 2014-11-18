@@ -4,10 +4,16 @@ ngGuid
 A simple Guid generator based on this SO discussion: http://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript.
 
 ##Install
-You can install this package from bower
+You can install this package from bower:
 
 ```
-bower install angular-guid
+bower install angular-guid --save
+````
+
+And add the script reference:
+
+```html
+<script src="bower_components/angular-guid/guid.min.js"></script>
 ````
 
 ##Load module into your ng application
