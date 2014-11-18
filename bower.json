@@ -1,6 +1,4 @@
 {
-  name: "angular-guid",
-  version: "0.1.0",
-  main: "./guid.min.js",
-  homepage: "https://github.com/ruionwriting/ngGuid"
+    name: "angular-guid",
+    version: "0.1.0"
 }
