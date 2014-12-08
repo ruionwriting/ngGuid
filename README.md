@@ -33,7 +33,7 @@ app.controller('mainCtrl', ['$scope','Guid', function($scope, Guid){
 Using `newGuid()` or `empty`:
 
 ```javascipt
-app.controller('mainCtrl', ['$scope','uuid', function($scope,uuid2){
+app.controller('mainCtrl', ['$scope','Guid', function($scope, Guid){
 	console.log('New Guid: ' + Guid.newGuid());
     console.log('Empty Guid: ' + Guid.empty);
 }])
