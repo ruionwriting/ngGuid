@@ -37,8 +37,8 @@
 
         function _cryptoGuid() {
             var buffer = new window.Uint16Array(8);
-            window.crypto = window.crypto || window.msCrypto;
-            window.crypto.getRandomValues(buffer);
+            var crypto = window.crypto || window.msCrypto
+            crypto.getRandomValues(buffer);
 
             return [_s4(buffer[0]) + _s4(buffer[1]), _s4(buffer[2]), _s4(buffer[3]), _s4(buffer[4]), _s4(buffer[5]) + _s4(buffer[6]) + _s4(buffer[7])].join('-');
         }
