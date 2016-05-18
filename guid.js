@@ -1,5 +1,5 @@
 /**!
- * ngGuid v0.1.0
+ * ngGuid v0.1.2
  * @copyright 2014 Rui Marques. All Rights Reserved.
  * @license see LICENCE.
  * [https://github.com:ruionwriting/ngUUID.git]
