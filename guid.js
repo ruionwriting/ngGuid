@@ -55,10 +55,10 @@
         }
 
         function create() {
-            var hasCrypto = typeof (window.crypto) != 'undefined',
-                hasRandomValues = typeof (window.crypto.getRandomValues) != 'undefined';
+            var hasCrypto = typeof (window.crypto) != 'undefined';
+            var hasRandomValues = hasCrypto && typeof(window.crypto.getRandomValues) != 'undefined';
 
-            return (hasCrypto && hasRandomValues) ? _cryptoGuid() : _guid();
+            return (hasRandomValues) ? _cryptoGuid() : _guid();
         }
     }
 
