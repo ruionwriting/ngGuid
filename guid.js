@@ -37,7 +37,7 @@
 
         function _cryptoGuid() {
             var buffer = new window.Uint16Array(8);
-            var crypto = window.crypto || window.msCrypto
+            var crypto = window.crypto || window.msCrypto;
             crypto.getRandomValues(buffer);
 
             return [_s4(buffer[0]) + _s4(buffer[1]), _s4(buffer[2]), _s4(buffer[3]), _s4(buffer[4]), _s4(buffer[5]) + _s4(buffer[6]) + _s4(buffer[7])].join('-');
@@ -55,10 +55,14 @@
         }
 
         function create() {
-            var hasCrypto = typeof (window.crypto) != 'undefined',
-                hasRandomValues = typeof (window.crypto.getRandomValues) != 'undefined';
+            if (typeof window !== "undefined") {
+                var crypto = window.crypto || window.msCrypto;
+                if (crypto.getRandomValues) {
+                    return _cryptoGuid();
+                }
+            }
 
-            return (hasCrypto && hasRandomValues) ? _cryptoGuid() : _guid();
+            return _guid();
         }
     }
 
