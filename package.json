@@ -1,0 +1,8 @@
+{
+    "name": "angular-guid",
+    "version": "0.1.2",
+    "description": "A simple angular module to mimic C# Guid NewGuid() and Empty.",
+    "repository": "https://github.com/ruionwriting/ngGuid.git",
+    "license": "MIT",
+    "dependencies": {}
+}
